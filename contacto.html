@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <!--Hacer referencia al css creado de galletas con la etiqueta "link rel="stylesheet" href="galletas.css"-->
+    <link rel="stylesheet" href="galletas.css">
+</head>
+<body>
+    <!--Volver al Menú de inicio con la etiqueta "a href"-->
+    <a href="./receta-galletas.html">Volver al Menú</a>
+    <!--Imagen de fondo con una etiqueta "style" utilizando css dentro de la propia etiqueta"-->
+    <style>
+        body {
+            background-image: url("./img/contacto.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            margin: auto;
+            width: auto;
+            padding: 150px;
+        }
+    </style>
+    <h1>CONTACTO : RELLENAR INFORMACIÓN</h1>
+
+    <form>
+        <!--nombre del usuario con una etiqueta "imput" & "label"-->
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name" placeholder="Introduzca su nombre"><br>
+
+        <!--apellidos con una etiqueta "imput" & "label"-->
+        <label for="firstName">Apellidos:</label><br>
+        <input type="text" id="firstName" name="firstName" placeholder="Intruduzca sus apellidos"><br>
+
+        <!--email con una etiqueta "imput" & "label"-->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="email@email.com"><br>
+
+        <!--Seleccionar la opción deseada con una etiqueta "imput" & "label"-->
+        <!--Llamar a la clase con la etiqueta "div class"-->
+        <div class="h2contact-text">
+            <h2>Seleccione la opción que sobre la que desea informarse:</h2>
+        </div>
+
+        <input type="radio" id="radio-query" name="form">
+        <label for="radio-query">Consulta</label><br>
+
+        <input type="radio" id="radio-suggestion" name="form">
+        <label for="radio-suggestion">Sugerencias</label><br>
+
+        <input type="radio" id="radio-correction" name="form">
+        <label for="radio-correction">Corrección</label><br>
+
+        <!--Escribir un comentario con una etiqueta "textarea"-->
+        <!--Llamar a la clase con la etiqueta "div class"-->
+        <div class="comment-text">
+            <label for="opinion">Escriba la dudas que tenga, intentaremos responder a todas sus preguntas:</label><br>
+        </div>
+        <textarea name="opinion" id="opinion" cols="30" rows="10"></textarea><br><br>
+
+        <!--Aceptar/Rechazar política de privacidad con una etiqueta "option" dentro de otra "select"-->
+
+        <label for="select-option"> Aceptar/Rechazar política de privacidad: </label>
+        <select id="select-option" name="select-option">
+            <option value="Accept private politic">Aceptar política de privacidad</option>
+            <option value="Decline private politic">Rechazar política de privacidad</option>
+        </select><br>
+
+        <!--Enviar formulario con una etiqueta "button"-->
+        <button type="submit">Enviar su formulario de contacto</button>
+
+
+
+    </form>
+
+</body>
+</html>

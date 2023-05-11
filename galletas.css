@@ -1,0 +1,40 @@
+body {
+    background-image: url("./img/galletas.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: auto;
+    width: auto;
+    padding: 150px;
+}
+
+p {
+    color: white;
+}
+
+h2 {
+    color: black;
+}
+
+.color-ingredientes {
+    background-color: rgb(28, 176, 221);
+}
+
+.color-text-ingredientes {
+    background-color: white;
+}
+
+.elaboration-text-color {
+    background-color: black;
+    color: white;
+}
+
+.h2contact-text {
+    color: black;
+    background-color: white;
+}
+
+.comment-text {
+    color: black;
+    background-color: white;
+}
